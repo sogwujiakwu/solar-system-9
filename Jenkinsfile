@@ -86,7 +86,7 @@ pipeline {
 
     stage('Raise PR') {
       steps {
-        sh "git request-pull v$VERSION https://github.com/sogwujiakwu/gitops-argocd.git feature-gitea"
+        sh "git request-pull v1.0 https://github.com/sogwujiakwu/gitops-argocd.git main"
       }
     } 
   }
