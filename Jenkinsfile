@@ -10,6 +10,16 @@ pipeline {
   }
   
   stages {
+    stage('clean workspace') {
+      steps {
+        cleanWs()
+      }
+    }
+    stage('checkout') {
+      steps {
+        checkout scm
+      }
+    }    
     stage('Unit Tests') {
       steps {
         echo 'Implement unit tests if applicable.'
