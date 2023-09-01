@@ -45,7 +45,7 @@ pipeline {
 
           } else {
             echo 'Repo does not exists - Cloning the repo'
-            sh 'git clone -b feature-gitea https://github.com/sogwujiakwu/gitops-argocd.git'
+            sh 'git clone -b feature-gitea github.com/sogwujiakwu/gitops-argocd.git'
           }
         }
       }
