@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent {label 'argocd'}
 
   environment {
     NAME = "solar-system"
